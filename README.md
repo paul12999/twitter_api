@@ -1,24 +1,35 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Twitter api
 
-Things you may want to cover:
+* Gem twitter
 
-* Ruby version
+* require 'twitter'
+client = Twitter::REST::Client.new do |config|
+  config.consumer_key        = "YOUR_CONSUMER_KEY"
+  config.consumer_secret     = "YOUR_CONSUMER_SECRET"
+  config.access_token        = "YOUR_ACCESS_TOKEN"
+  config.access_token_secret = "YOUR_ACCESS_SECRET"
+end
 
-* System dependencies
+[key](https://developer.twitter.com/en/portal/projects-and-apps)
 
-* Configuration
 
-* Database creation
+* Ruby 2.7
 
-* Database initialization
+* Rails version 6.0
 
-* How to run the test suite
+* User Tweet controller
 
-* Services (job queues, cache servers, search engines, etc.)
+* users Database: name , description
+*   User.create(name:cleant.user("@@").name, description:cleant.user("@@").description) 
 
-* Deployment instructions
+* tweets Database: content user_id
+*   Tweet.create(name:cleant.user("@@").tweet.full_text, user_id:@) 
 
-* ...
+
+
+
+
+
+
