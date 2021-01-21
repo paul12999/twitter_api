@@ -22,10 +22,10 @@
 * User Tweet controller
 
 * users Database: name , description
-*   `User.create(name:cleant.user("@@").name, description:cleant.user("@@").description) `
+*   `User.create(name:client.user("@@").name, description:cleant.user("@@").description) `
 
 * tweets Database: content user_id
-*   `Tweet.create(name:cleant.user("@@").tweet.full_text, user_id:@) `
+*   `Tweet.create(name:client.user("@@").tweet.full_text, user_id:@) `
 
 
 
